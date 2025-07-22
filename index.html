@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body class="bg-stone-100 text-gray-700">
+    <!-- Contenido Principal -->
+    <main class="max-w-7xl mx-auto bg-white px-30 py-5">
+      <!-- Menú -->
+      <nav id="mainMenu" class="flex justify-center mt-5 rotate-2 animate__animated animate__fadeIn">
+        <ul class="bg-white border border-gray-200 rounded-4xl shadow-md px-13 py-3 flex space-x-6">
+          <li>
+            <a href="#" class="hover:text-violet-500 text-sm font-medium hover:text-base transition-all duration-200">Sobre Mí</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-violet-500 text-sm font-medium hover:text-base transition-all duration-200">Experiencia</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-violet-500 text-sm font-medium hover:text-base transition-all duration-200">Proyectos</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-violet-500 text-sm font-medium hover:text-base transition-all duration-200">Contacto</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-violet-500 text-sm font-medium hover:text-base transition-all duration-200">Otros</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Acerca De Mí -->
+      <section class="flex flex-col items-start px-8 py-16 space-y-6 max-w-2xl animate__animated animate__fadeInLeft animate__delay-0.7s">
+        <!-- Foto -->
+        <div class="cursor-pointer w-17 h-17 rounded-full overflow-hidden shadow-md hover:scale-130 transform transition-transform duration-300">
+          <img src="resources/images/avatar.webp" alt="Daniel Aguilar" class="w-full h-full object-cover" />
+        </div>
+        <!-- Título -->
+        <h1 class="text-4xl font-bold tracking-tight">
+          ¡Hola!, Soy
+          <a id="nameLink" class="text-4xl cursor-pointer text-indigo-500 hover:text-5xl transition-all duration-200">
+            Daniel
+            <span id="emoji" class="transition-all duration-200">👋🏻</span>
+          </a>
+        </h1>
+        <!-- Descripción -->
+        <i class="text-base text-zinc-500">
+          Desarrollador frontend apasionado por crear experiencias web funcionales y atractivas. Trabajo con
+          <b>HTML</b>
+          ,
+          <b>CSS</b>
+          ,
+          <b>Tailwind</b>
+          ,
+          <b>JavaScript</b>
+          y
+          <b>Craft CMS</b>
+          más recientemente.
+        </i>
+        <!-- Redes sociales -->
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/in/danielaguilar0395/" target="_blank" class="text-gray-400 hover:text-violet-500 transition">
+            <i class="fab fa-linkedin fa-xl hover:scale-150 transition-all duration-200"></i>
+          </a>
+          <a href="https://github.com/danlakelake" target="_blank" class="text-gray-400 hover:text-violet-500 transition">
+            <i class="fab fa-github fa-xl hover:scale-150 transition-all duration-200"></i>
+          </a>
+          <a href="https://behance.net/tuusuario" target="_blank" class="text-gray-400 hover:text-violet-500 transition">
+            <i class="fab fa-behance fa-xl hover:scale-150 transition-all duration-200"></i>
+          </a>
+        </div>
+      </section>
+      <!-- Seccion Proyectos -->
+      <section class="flex flex-col items-center px-8 pb-8 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s">
+        <div class="w-full max-w-3xl flex items-center justify-center mb-10">
+          <div
+            class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_10px]"
+            style="
+              background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
+            "
+          ></div>
+          <span class="text-4xl font-bold tracking-tight -rotate-3 px-4 cursor-pointer hover:text-5xl transition-all duration-200">Proyectos</span>
+          <div
+            class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_10px]"
+            style="
+              background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
+            "
+          ></div>
+        </div>
+        <!-- Galería Slide-->
+        <div class="swiper relative w-full">
+          <div class="swiper-wrapper px-6 py-4">
+            <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+              <a href="https://www.behance.net/gallery/230420171/Empeno-Facil-Website-EzCorp" target="_blank">
+                <img
+                  src="resources/images/projects/ef.webp"
+                  class="w-69 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
+              <a href="https://www.behance.net/gallery/159214533/Landing-Smart-Based-on-iSmart-Template" target="_blank">
+                <img
+                  src="resources/images/projects/smart.webp"
+                  class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+              <a href="https://www.behance.net/gallery/145435859/Voice-Recognition-System-(Frontend-Layout-Interface)" target="_blank">
+                <img
+                  src="resources/images/projects/vrs.webp"
+                  class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
+              <a href="https://www.behance.net/gallery/92066535/Vefcon-Website">
+                <img
+                  src="resources/images/projects/vefcon.webp"
+                  class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+              <a href="https://www.behance.net/gallery/92066111/Azell-Website" target="_blank">
+                <img
+                  src="resources/images/projects/azell.webp"
+                  class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
+              <a href="https://www.behance.net/gallery/92067579/Medical-Meeting" target="_blank">
+                <img
+                  src="resources/images/projects/mm.webp"
+                  class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Controles Slide -->
+        </div>
+      </section>
+    </main>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
