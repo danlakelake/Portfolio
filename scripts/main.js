@@ -5,11 +5,31 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 3,
     slidesPerGroup: 1,
     spaceBetween: 24,
+    breakpoints: {
+      // Breakpoints
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
     loop: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: true,
     },
+  });
+
+  // Menú Responsive
+  const menuToggle = document.getElementById('menuToggle');
+  const menuList = document.getElementById('mainMenu');
+
+  menuToggle.addEventListener('click', () => {
+    menuList.classList.toggle('hidden');
   });
 
   // Menú navegación
@@ -37,5 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   nameLink.addEventListener('mouseleave', () => {
     emoji.textContent = '👋🏻';
+  });
+
+  // Ver Más Toggle
+  const toggleButtons = document.querySelectorAll('.viewMoreToggle');
+
+  toggleButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      // Buscar el div con descripción dentro del mismo article padre
+      const article = button.closest('article');
+      const job_desc = article.querySelector('.job-desc');
+
+      const isCollapsed = job_desc.classList.contains('line-clamp-2');
+
+      job_desc.classList.toggle('line-clamp-2');
+      button.textContent = isCollapsed ? 'Ver menos' : 'Ver más';
+    });
   });
 });
