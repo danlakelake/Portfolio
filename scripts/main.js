@@ -1,4 +1,4 @@
-// Inicializar scripts cuando el DOM este cargado
+// Inicializa scripts cuando el DOM este cargado
 document.addEventListener('DOMContentLoaded', () => {
   // Inicializa Swiper
   const swiper = new Swiper('.swiper', {
