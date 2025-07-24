@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     iconMenu.classList.toggle('fa-xmark');
   });
 
-  // Menú navegación
+  // Menú Web
   const nav = document.getElementById('mainMenu');
 
   if (nav) {
