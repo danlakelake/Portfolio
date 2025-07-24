@@ -61,17 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
     emoji.textContent = '👋🏻';
   });
 
-  // Ver Más Toggle
+  // Ver Más Toggle Btn Exp.
   const toggleButtons = document.querySelectorAll('.viewMoreToggle');
 
   toggleButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      // Buscar el div con descripción dentro del mismo article padre
       const article = button.closest('article');
       const job_desc = article.querySelector('.job-desc');
       const isCollapsed = job_desc.classList.contains('line-clamp-2');
 
-      // Alternar la clase que limita el texto a 2 líneas
+      // Alterna texto en dropdown limita a 2 líneas
       job_desc.classList.toggle('line-clamp-2');
       // Icono dentro de los botónes
       const icon_arrow = button.querySelector('i');
