@@ -18,39 +18,42 @@
   <body class="bg-stone-100 text-gray-700">
     <!-- Contenido Principal -->
     <main class="max-w-7xl mx-auto bg-white sm:px-0 lg:px-30 py-5">
-      <!-- Botón Hamburguesa Móvil-->
+      <!-- Menú Responsive -->
       <div class="flex justify-end px-4 md:hidden">
         <button id="menuToggle" class="text-gray-700 text-2xl">
-          <i class="fas fa-bars"></i>
+          <i id="icon_menu" class="fas fa-bars"></i>
         </button>
       </div>
       <!-- Menú -->
-      <nav id="mainMenu" class="hidden md:flex justify-center mt-0 md:mt-5 md:rotate-2 animate__animated animate__fadeIn">
-        <ul class="block md:flex bg-white border-none md:boorder border-gray-200 rounded-4xl shadow-none md:shadow-md px-13 py-3 space-x-6">
-          <li>
-            <a href="#" class="hover:text-indigo-500 text-sm font-medium hover:text-base transition-all duration-100">Sobre Mí</a>
+      <nav id="mainMenu" class="hidden md:flex justify-center mt-0 md:mt-5 rotate-2 animate__animated animate__fadeIn">
+        <ul
+          class="block px-10 md:px-13 py-3 space-x-6 space-y-4 md:space-y-0 text-sm font-medium md:flex bg-white border-none border border-gray-200 rounded-4xl shadow-none md:shadow-md"
+        >
+          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#sobre-mi">Sobre Mí</a>
           </li>
-          <li>
-            <a href="#experiencia" class="hover:text-indigo-500 text-sm font-medium hover:text-base transition-all duration-100">Experiencia</a>
+          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#experiencia">Experiencia</a>
           </li>
-          <li>
-            <a href="#projects" class="hover:text-indigo-500 text-sm font-medium hover:text-base transition-all duration-100">Proyectos</a>
+          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#projects">Proyectos</a>
           </li>
-          <li>
-            <a href="#" class="hover:text-indigo-500 text-sm font-medium hover:text-base transition-all duration-100">Contacto</a>
+          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#contacto">Contacto</a>
           </li>
-          <li>
-            <a href="#" class="hover:text-indigo-500 text-sm font-medium hover:text-base transition-all duration-100">Otros</a>
+          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#">Otros</a>
           </li>
         </ul>
       </nav>
-      <!-- Acerca De Mí -->
-      <section class="flex flex-col items-start px-8 py-16 space-y-6 max-w-2xl animate__animated animate__fadeInLeft animate__delay-0.7s">
-        <!-- Foto -->
+      <!-- Sobre Mí -->
+      <section
+        id="sobre-mi"
+        class="flex flex-col items-start px-8 pt-7 md:pt-16 pb-10 md:pb-16 space-y-6 max-w-2xl animate__animated animate__fadeInLeft animate__delay-0.7s"
+      >
         <div class="cursor-pointer w-17 h-17 rounded-full overflow-hidden shadow-md hover:scale-130 transform transition-transform duration-300">
           <img src="resources/images/profile.webp" alt="Daniel Aguilar" class="w-full h-full object-cover" />
         </div>
-        <!-- Título -->
         <h1 class="text-4xl font-bold tracking-tight">
           ¡Hola!, Soy
           <a id="nameLink" class="text-4xl cursor-pointer text-indigo-500 hover:text-5xl transition-all duration-200">
@@ -58,19 +61,22 @@
             <span id="emoji" class="transition-all duration-200">👋🏻</span>
           </a>
         </h1>
-        <!-- Descripción -->
-        <i class="text-base text-zinc-500">
-  Diseñador digital de profesión y desarrollador frontend apasionado por crear experiencias web funcionales y atractivas. Trabajo con
-  <b>HTML</b>,
-  <b>CSS</b>,
-  <b>Bootstrap</b>,
-  <b>Tailwind</b>,
-  <b>JavaScript</b>
-  y
-  <b>Craft CMS</b>
-  más recientemente.
-</i>
-        <!-- Redes sociales -->
+        <p class="text-base text-zinc-500 italic">
+          Diseñador digital de profesión y desarrollador frontend apasionado por crear experiencias web funcionales y atractivas. Trabajo con
+          <b>HTML</b>
+          ,
+          <b>CSS</b>
+          ,
+          <b>Bootstrap</b>
+          ,
+          <b>Tailwind</b>
+          ,
+          <b>JavaScript</b>
+          ,
+          <b>Craft CMS</b>
+          más recientemente.
+        </p>
+        <!-- Redes Sociales -->
         <div class="flex space-x-5 -rotate-2">
           <a href="https://www.linkedin.com/in/danielaguilar0395/" target="_blank" class="text-gray-400 hover:text-indigo-500 transition">
             <i class="fab fa-linkedin fa-xl hover:scale-150 transition-all duration-200"></i>
@@ -155,7 +161,10 @@
         </div>
       </section>
       <!-- Sección Experiencia & CV -->
-      <section id="experiencia" class="flex flex-col items-start px-8 py-16 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s">
+      <section
+        id="experiencia"
+        class="flex flex-col items-start px-8 py-5 md:py-16 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s"
+      >
         <div class="w-full flex items-center justify-start gap-4 mb-11">
           <h2 class="text-4xl font-bold tracking-tight rotate-2 px-4 cursor-pointer hover:text-5xl transition-all duration-200">Experiencia</h2>
           <div
@@ -165,14 +174,17 @@
             "
           ></div>
         </div>
-        <!-- Columnas-->
+        <!-- Columnas -->
         <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
+          <!-- Experiencias Laborales -->
           <div class="col-span-12 md:col-span-7">
-            <p class="font-bold text-2lg text-gray-400">Ultimas 3 Experiencias Laborales</p>
-            <!-- Exp Lab 1 -->
-            <article class="bg-white p-6 rounded-lg shadow-md mb-5">
+            <p class="font-medium text-2lg text-gray-400 mb-5">Ultimas 3 Experiencias Laborales</p>
+            <!-- Exp. 1 -->
+            <article
+              class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
+            >
               <span class="text-sm text-gray-400">| Dic 2022 - Ene 2025 - 2 años 2 mes</span>
-              <h3 class="text-xl font-bold mb-2">Consultoría E3 - Webmaster</h3>
+              <h3 class="text-lg font-bold mb-2">Consultoría E3 - Webmaster</h3>
               <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
                 <p>
                   Colaboré en el área de desarrollo web, desempeñándome como webmaster. Mi área se especializó en el desarrollo de sitios web para
@@ -188,15 +200,18 @@
                 </p>
               </div>
               <button
-                class="viewMoreToggle mt-2 text-indigo-500 font-medium hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
+                class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
               >
                 Ver más
+                <i class="fa fa-chevron-down"></i>
               </button>
             </article>
-            <!-- Exp Lab 2 -->
-            <article class="bg-white p-6 rounded-lg shadow-md mb-5">
+            <!-- Exp. 2 -->
+            <article
+              class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
+            >
               <span class="text-sm text-gray-400">| Sep 2020 - Nov 2022 - 2 años 3 meses</span>
-              <h3 class="text-xl font-bold mb-2">Morpheus Dss - Frontend Web Developer</h3>
+              <h3 class="text-lg font-bold mb-2">Morpheus Dss - Frontend Web Developer</h3>
               <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
                 <p>
                   Como desarrollador frontend, colaboré en el desarrollo del sistema interno de la empresa utilizando Electron (aplicación de
@@ -209,15 +224,16 @@
                 </p>
               </div>
               <button
-                class="viewMoreToggle mt-2 text-indigo-500 font-medium hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
+                class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
               >
                 Ver más
+                <i class="fa fa-chevron-down"></i>
               </button>
             </article>
-            <!-- Exp Lab 3 -->
-            <article class="bg-white p-6 rounded-lg shadow-md">
+            <!-- Exp. 3 -->
+            <article class="bg-white p-6 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer">
               <span class="text-sm text-gray-400">| Nov 2018 - Jul 2020 - 1 año 9 meses</span>
-              <h3 class="text-xl font-bold mb-2">Dood S.A.P.I. - Web Designer/FE Web Dev</h3>
+              <h3 class="text-lg font-bold mb-2">Dood S.A.P.I. - Web Designer/FE Web Dev</h3>
               <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
                 <p>
                   Participé activamente en el diseño y desarrollo de estrategias comerciales mediante sitios web. Trabajé en colaboración con los
@@ -231,36 +247,84 @@
                 </p>
               </div>
               <button
-                class="viewMoreToggle mt-2 text-indigo-500 font-medium hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
+                class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
               >
                 Ver más
+                <i class="fa fa-chevron-down"></i>
               </button>
             </article>
           </div>
           <!-- Cv -->
           <div class="col-span-12 md:col-span-5 px-0 md:px-10 py-5 md:py-0">
-          <p class="font-bold text-2lg text-gray-500">CV Actualizado - 2025</p>
-          <!-- Vista previa CV usando imagen para mejor responsive -->
-          <div class="aspect-[8.5/11] border shadow-lg mt-2 mb-6 overflow-hidden rounded relative">
-            <img
-              src="resources/images/cv.webp"
-              alt="Vista previa del CV de Daniel Aguilar"
-              class="absolute top-0 left-0 w-full h-auto"
-              style="transform: translateY(-20%);"
-              loading="lazy"
-            />
+            <p class="font-medium text-2lg text-gray-400">CV Actualizado - 2025</p>
+            <div class="mt-2 mb-6 p-3 overflow-hidden rounded bg-stone-100 -rotate-2">
+              <img src="resources/images/cv.webp" class="object-cover" loading="lazy" />
+            </div>
+            <div class="flex gap-3 justify-start items-center">
+              <a
+                href="resources/pdf/CV-DanielAguilar.pdf"
+                target="_blank"
+                download
+                class="flex-1 flex items-center justify-center gap-2 font-medium bg-indigo-500 text-stone-100 px-4 py-2 rounded transform hover:scale-110 transition duration-200"
+              >
+                Vista Previa
+                <i class="fas fa-eye text-sm"></i>
+              </a>
+              <a
+                href="resources/pdf/CV-DanielAguilar.pdf"
+                target="_blank"
+                download="CV-Daniel-Aguilar.pdf"
+                class="flex-none flex items-center justify-center gap-2 bg-indigo-500 text-stone-100 px-4 py-3 rounded transform hover:scale-110 transition duration-200"
+              >
+                <i class="fas fa-download text-sm"></i>
+              </a>
+            </div>
+            <!-- Contacto -->
+            <div id="contacto" class="mt-10 md:mt-5 rounded-2xl border border-2 border-zinc-100 p-8 -rotate-2">
+              <p class="font-medium text-2lg text-gray-400 mb-2">
+                <i class="fas fa-briefcase mr-1"></i>
+                Contacto
+              </p>
+              <div class="flex flex-col gap-4 py-3 rounded items-start">
+                <div class="flex items-center gap-3">
+                  <span class="w-9 h-9 p-1 flex items-center justify-center rounded-full shadow-md hover:scale-125 transition">
+                    <a href="https://wa.me/524613353002" target="_blank" aria-label="WhatsApp" class="text-green-500 hover:scale-125 transition">
+                      <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                  </span>
+                  <p class="m-0 font-medium text-stone-500">(+52) 461-335-3002</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-9 h-9 flex items-center justify-center rounded-full shadow-md hover:scale-125 transition">
+                    <a href="https://www.linkedin.com/in/danielaguilar0395/" target="_blank" aria-label="LinkedIn" class="text-sky-600">
+                      <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                  </span>
+                  <p class="m-0 font-medium text-stone-500">LinkedIn</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Botón de descarga -->
-          <a
-            href="resources/pdf/CV-DanielAguilar.pdf"
-            download
-            class="flex items-center justify-center gap-2 bg-indigo-500 text-white px-4 py-2 -rotate-2 rounded transform hover:scale-110 transition duration-200"
-          >
-            Vista Previa
-            <i class="fas fa-eye"></i>
-          </a>
         </div>
       </section>
+      <!-- Footer -->
+      <footer class="pt-0 pb-4 md:pb-6 -rotate-1">
+        <div
+          class="w-full h-8 bg-no-repeat mb-5 md:mb-8 bg-center bg-[length:100%_14px] mb-4"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 14\' preserveAspectRatio=\'none\'%3E%3Cpath d=\'M0 14 L6 0 L12 14 L18 0 L24 14 L30 0 L36 14 L42 0 L48 14 L54 0 L60 14 L66 0 L72 14 L78 0 L84 14 L90 0 L96 14 L102 0 L108 14 L114 0 L120 14 L126 0 L132 14 L138 0 L144 14 L150 0 L156 14 L162 0 L168 14 L174 0 L180 14 L186 0 L192 14 L198 0 L204 14 L210 0 L216 14 L222 0 L228 14 L234 0 L240 14 L246 0 L252 14 L258 0 L264 14 L270 0 L276 14 L282 0 L288 14 L294 0 L300 14\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'2\'/%3E%3C/svg%3E');
+          "
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 font-medium text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex gap-6">
+            <a href="#sobre-mi" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Sobre Mí</a>
+            <a href="#experiencia" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Experiencia</a>
+            <a href="#projects" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Proyectos</a>
+            <a href="#contacto" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Contacto</a>
+          </div>
+          <div class="text-zinc-400">&copy;2025 Danlakelake. Todos los derechos reservados.</div>
+        </div>
+      </footer>
     </main>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

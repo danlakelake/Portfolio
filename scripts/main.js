@@ -27,9 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Menú Responsive
   const menuToggle = document.getElementById('menuToggle');
   const menuList = document.getElementById('mainMenu');
+  const iconMenu = document.getElementById('icon_menu');
 
   menuToggle.addEventListener('click', () => {
     menuList.classList.toggle('hidden');
+    iconMenu.classList.toggle('fa-xmark');
   });
 
   // Menú navegación
@@ -67,11 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
       // Buscar el div con descripción dentro del mismo article padre
       const article = button.closest('article');
       const job_desc = article.querySelector('.job-desc');
-
       const isCollapsed = job_desc.classList.contains('line-clamp-2');
 
+      // Alternar la clase que limita el texto a 2 líneas
       job_desc.classList.toggle('line-clamp-2');
-      button.textContent = isCollapsed ? 'Ver menos' : 'Ver más';
+      // Icono dentro de los botónes
+      const icon_arrow = button.querySelector('i');
+      // Cambia texto e ícono
+      button.childNodes[0].textContent = isCollapsed ? 'Ver menos ' : 'Ver más ';
+      icon_arrow.classList.toggle('fa-chevron-down');
+      icon_arrow.classList.toggle('fa-chevron-up');
     });
   });
 });
