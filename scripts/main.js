@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Aplica en cualquier tamaño
       if (isScrolled) {
-        nav.classList.add('fixed', 'top-5');
+        nav.classList.add('fixed', 'top-12');
         langMenuDiv.classList.add('fixed');
 
         // Aplica solo en desktop
