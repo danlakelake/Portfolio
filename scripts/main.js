@@ -34,17 +34,34 @@ document.addEventListener('DOMContentLoaded', () => {
     iconMenu.classList.toggle('fa-xmark');
   });
 
-  // Menú Web
+  // Menú Web y Toggle Idioma
   const nav = document.getElementById('mainMenu');
+  const langMenuDiv = document.getElementById('langMenuDiv');
 
-  if (nav) {
+  if (nav && langMenuDiv) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 80) {
-        nav.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'z-50');
-        nav.classList.replace('mt-10', 'mt-5');
+      const isDesktop = window.innerWidth >= 768;
+      const isScrolled = window.scrollY > 80;
+
+      // Aplica en cualquier tamaño
+      if (isScrolled) {
+        nav.classList.add('fixed', 'top-5');
+        langMenuDiv.classList.add('fixed');
+
+        // Aplica solo en desktop
+        if (isDesktop) {
+          nav.classList.add('left-0', 'w-full', 'z-1');
+          langMenuDiv.classList.add('z-2', 'top-5', 'right-[14vw]');
+          langMenuDiv.classList.remove('bg-white');
+        } else {
+          //Aplica solo en responsive
+          langMenuDiv.classList.add('bg-white', 'z-2', 'top-0', 'py-3');
+          nav.classList.add('w-full', 'bg-white', 'top-14', 'z-1');
+        }
       } else {
-        nav.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'z-50');
-        nav.classList.replace('mt-5', 'mt-10');
+        // Se remueven clases en todos los tamaños
+        nav.classList.remove('fixed', 'top-5', 'left-0', 'w-full', 'z-1', 'bg-white');
+        langMenuDiv.classList.remove('fixed', 'top-5', 'right-[14vw]', 'bg-white', 'py-3');
       }
     });
   }
@@ -72,10 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Alterna texto en dropdown limita a 2 líneas
       job_desc.classList.toggle('line-clamp-2');
+
       // Icono dentro de los botónes
       const icon_arrow = button.querySelector('i');
-      // Cambia texto e ícono
-      button.childNodes[0].textContent = isCollapsed ? 'Ver menos ' : 'Ver más ';
+
+      // Cambia texto e ícono manejando multiples idiomas
+      const verMas = button.querySelector('[data-i18n="ver_mas"]');
+      const verMenos = button.querySelector('[data-i18n="ver_menos"]');
+
+      // Muestra u oculta según el estado de collapse
+      verMas.style.display = isCollapsed ? 'none' : '';
+      verMenos.style.display = isCollapsed ? '' : 'none';
+
+      // Cambia icono segun el estado del collapse
       icon_arrow.classList.toggle('fa-chevron-down');
       icon_arrow.classList.toggle('fa-chevron-up');
     });

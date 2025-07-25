@@ -17,35 +17,43 @@
   </head>
   <body class="bg-stone-100 text-gray-700">
     <!-- Contenido Principal -->
-    <main class="max-w-7xl mx-auto bg-white sm:px-0 lg:px-30 py-5">
-      <!-- Menú Responsive -->
-      <div class="flex justify-end px-4 md:hidden">
-        <button id="menuToggle" class="text-gray-700 text-2xl">
-          <i id="icon_menu" class="fas fa-bars"></i>
-        </button>
+    <main class="max-w-7xl mx-auto bg-white sm:px-0 lg:px-30 py-2 md:py-5">
+      <!-- Switch Idioma y Menu Toggle Responsive -->
+      <div id="langMenuDiv" class="w-full flex flex-row justify-between md:justify-end items-center px-7 md:px-12 py-2 md:py-0">
+        <div class="py-0 rotate-2">
+          <button
+            id="langSwitch"
+            class="bg-indigo-500 text-white px-4 py-2 rounded-full cursor-pointer shadow-md hover:bg-indigo-600 transition font-bold flex items-center gap-2"
+            aria-label="Cambiar idioma"
+          >
+            <i class="fas fa-globe"></i>
+            <span id="langLabel">ES</span>
+          </button>
+        </div>
+        <div class="md:hidden">
+          <button id="menuToggle" class="text-gray-700 text-2xl">
+            <i id="icon_menu" class="fas fa-bars"></i>
+          </button>
+        </div>
       </div>
       <!-- Menú -->
-      <nav id="mainMenu" class="hidden md:flex justify-center mt-0 md:mt-5 rotate-2 animate__animated animate__fadeIn">
+      <nav id="mainMenu" class="hidden md:flex justify-center my-0 rotate-2 animate__animated animate__fadeIn z-1">
         <ul
-          class="block px-10 md:px-13 py-3 space-x-6 space-y-4 md:space-y-0 text-sm font-medium md:flex bg-white border-none border border-gray-200 rounded-4xl shadow-none md:shadow-md"
+          class="block px-9 md:px-13 py-4 md:py-3 space-x-6 space-y-4 md:space-y-0 text-sm font-medium md:flex bg-white border-none border border-gray-200 rounded-4xl shadow-none md:shadow-md"
         >
-          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#sobre-mi">Sobre Mí</a>
+          <!-- Menu Links -->
+          <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#sobre-mi" data-i18n="menu_sobre_mi">Sobre Mí</a>
           </li>
-          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#experiencia">Experiencia</a>
+          <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#experiencia" data-i18n="menu_experiencia">Experiencia</a>
           </li>
-          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#projects">Proyectos</a>
+          <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#projects" data-i18n="menu_proyectos">Proyectos</a>
           </li>
-          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#contacto">Contacto</a>
+          <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="#contacto" data-i18n="menu_contacto">Contacto</a>
           </li>
-          <!--
-          <li class="hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#">Otros</a>
-          </li>
-           -->
         </ul>
       </nav>
       <!-- Sobre Mí -->
@@ -57,13 +65,13 @@
           <img src="resources/images/profile.webp" alt="Daniel Aguilar" class="w-full h-full object-cover" />
         </div>
         <h1 class="text-4xl font-bold tracking-tight">
-          ¡Hola!, Soy
+          <span data-i18n="saludo">¡Hola!, Soy</span>
           <a id="nameLink" class="text-4xl cursor-pointer text-indigo-500 hover:text-5xl transition-all duration-200">
             Daniel
             <span id="emoji" class="transition-all duration-200">👋🏻</span>
           </a>
         </h1>
-        <p class="text-base text-zinc-500 italic">
+        <p class="text-base text-zinc-500 italic" data-i18n="descripcion">
           Diseñador digital de profesión y desarrollador frontend apasionado por crear experiencias web funcionales y atractivas. Trabajo con
           <b>HTML</b>
           ,
@@ -100,7 +108,12 @@
               background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
             "
           ></div>
-          <h2 class="text-4xl font-bold tracking-tight -rotate-3 px-4 cursor-pointer hover:text-5xl transition-all duration-200">Proyectos</h2>
+          <h2
+            data-i18n="proyectos_titulo"
+            class="text-4xl font-bold tracking-tight -rotate-3 px-4 cursor-pointer hover:text-5xl transition-all duration-200"
+          >
+            Proyectos
+          </h2>
           <div
             class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_10px]"
             style="
@@ -168,7 +181,12 @@
         class="flex flex-col items-start px-8 py-5 md:py-16 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s"
       >
         <div class="w-full flex items-center justify-start gap-4 mb-11">
-          <h2 class="text-4xl font-bold tracking-tight rotate-2 px-4 cursor-pointer hover:text-5xl transition-all duration-200">Experiencia</h2>
+          <h2
+            class="text-4xl font-bold tracking-tight rotate-2 px-4 cursor-pointer hover:text-5xl transition-all duration-200"
+            data-i18n="experiencia_titulo"
+          >
+            Experiencia
+          </h2>
           <div
             class="h-10 flex-1 bg-no-repeat bg-center bg-[length:100%_12px]"
             style="
@@ -180,23 +198,23 @@
         <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
           <!-- Experiencias Laborales -->
           <div class="col-span-12 md:col-span-7">
-            <p class="font-medium text-2lg text-gray-400 mb-5">Ultimas 3 Experiencias Laborales</p>
+            <p class="font-medium text-2lg text-gray-400 mb-5" data-i18n="ultimas_experiencias">Ultimas 3 Experiencias Laborales</p>
             <!-- Exp. 1 -->
             <article
               class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
             >
-              <span class="text-sm text-gray-400">| Dic 2022 - Ene 2025 - 2 años 2 mes</span>
-              <h3 class="text-lg font-bold mb-2">Consultoría E3 - Webmaster</h3>
+              <span class="text-sm text-gray-400" data-i18n="exp1_fecha">| Dic 2022 - Ene 2025 - 2 años 2 mes</span>
+              <h3 class="text-lg font-bold mb-2" data-i18n="exp1_empresa">Consultoría E3 - Webmaster</h3>
               <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
-                <p>
+                <p data-i18n="exp1_desc">
                   Colaboré en el área de desarrollo web, desempeñándome como webmaster. Mi área se especializó en el desarrollo de sitios web para
                   diversos clientes, utilizando una variedad de tecnologías. Nuestro proyecto más destacado consistió en la creación y mantenimiento
                   de varios sitios web para la empresa estadounidense EzCorp, con un enfoque principal en su línea de operaciones para Latinoamérica,
                   desarrollados principalmente con Craft CMS.
                 </p>
                 <p class="font-medium mt-4">
-                  Tecnologías:
-                  <span class="font-normal">
+                  <span data-i18n="label_tecnologias">Tecnologías:</span>
+                  <span class="font-normal" data-i18n="exp1_tecnologias">
                     Craft CMS, Javascript, Bootstrap, Webpack, Api Rest, Linux, GitLab, WordPress, WooCommerce, SEO, Google Search Console.
                   </span>
                 </p>
@@ -204,7 +222,8 @@
               <button
                 class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
               >
-                Ver más
+                <span data-i18n="ver_mas">Ver más</span>
+                <span data-i18n="ver_menos" style="display: none">Ver menos</span>
                 <i class="fa fa-chevron-down"></i>
               </button>
             </article>
@@ -212,53 +231,55 @@
             <article
               class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
             >
-              <span class="text-sm text-gray-400">| Sep 2020 - Nov 2022 - 2 años 3 meses</span>
-              <h3 class="text-lg font-bold mb-2">Morpheus Dss - Frontend Web Developer</h3>
+              <span class="text-sm text-gray-400" data-i18n="exp2_fecha">| Sep 2020 - Nov 2022 - 2 años 3 meses</span>
+              <h3 class="text-lg font-bold mb-2" data-i18n="exp2_empresa">Morpheus Dss - Frontend Web Developer</h3>
               <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
-                <p>
+                <p data-i18n="exp2_desc">
                   Como desarrollador frontend, colaboré en el desarrollo del sistema interno de la empresa utilizando Electron (aplicación de
                   escritorio) y React (web). Trabajé en conjunto con otros departamentos como Backend, Base de Datos y Desarrollo Móvil. Nuestro
                   equipo estaba a cargo de dar seguimiento a los requisitos del proyecto, así como de revisar problemas e implementar mejoras.
                 </p>
                 <p class="font-medium mt-4">
-                  Tecnologías:
-                  <span class="font-normal">React, Semantic UI, Api Rest, Swagger, Webpack, Github.</span>
+                  <span data-i18n="label_tecnologias">Tecnologías:</span>
+                  <span data-i18n="exp2_tecnologias" class="font-normal">React, Semantic UI, Api Rest, Swagger, Webpack, Github.</span>
                 </p>
               </div>
               <button
                 class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
               >
-                Ver más
+                <span data-i18n="ver_mas">Ver más</span>
+                <span data-i18n="ver_menos" style="display: none">Ver menos</span>
                 <i class="fa fa-chevron-down"></i>
               </button>
             </article>
             <!-- Exp. 3 -->
             <article class="bg-white p-6 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer">
-              <span class="text-sm text-gray-400">| Nov 2018 - Jul 2020 - 1 año 9 meses</span>
-              <h3 class="text-lg font-bold mb-2">Dood S.A.P.I. - Web Designer/FE Web Dev</h3>
+              <span class="text-sm text-gray-400" data-i18n="exp3_fecha">| Nov 2018 - Jul 2020 - 1 año 9 meses</span>
+              <h3 class="text-lg font-bold mb-2" data-i18n="exp3_empresa">Dood S.A.P.I. - Web Designer/FE Web Dev</h3>
               <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
-                <p>
+                <p data-i18n="exp3_desc">
                   Participé activamente en el diseño y desarrollo de estrategias comerciales mediante sitios web. Trabajé en colaboración con los
                   equipos de software, diseño y marketing para asegurar una ejecución integral. Me encargué del seguimiento y la mejora continua de
                   los requerimientos del cliente, abarcando tanto aspectos de diseño como de funcionalidad y optimización. Además, gestioné el
                   mantenimiento del sitio y contribuí al desarrollo de nuevos productos.
                 </p>
                 <p class="font-medium mt-4">
-                  Tecnologías:
+                  <span data-i18n="label_tecnologias">Tecnologías:</span>
                   <span class="font-normal">React, Semantic UI, Api Rest, Swagger, Webpack, Github.</span>
                 </p>
               </div>
               <button
                 class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
               >
-                Ver más
+                <span data-i18n="ver_mas">Ver más</span>
+                <span data-i18n="ver_menos" style="display: none">Ver menos</span>
                 <i class="fa fa-chevron-down"></i>
               </button>
             </article>
           </div>
           <!-- Cv -->
           <div class="col-span-12 md:col-span-5 px-0 md:px-10 py-5 md:py-0 -rotate-2">
-            <p class="font-medium text-2lg text-gray-400">CV Actualizado - 2025</p>
+            <p class="font-medium text-2lg text-gray-400" data-i18n="cv_actualizado">CV Actualizado - 2025</p>
             <div class="mt-2 mb-6 p-3 overflow-hidden rounded bg-stone-100">
               <img src="resources/images/cv.webp" class="object-cover" loading="lazy" />
             </div>
@@ -267,9 +288,9 @@
                 href="resources/pdf/CV-DanielAguilar.pdf"
                 target="_blank"
                 download="CV-Daniel-Aguilar.pdf"
-                class="w-full text-center bg-indigo-500 text-stone-100 px-3 py-2 rounded transform hover:scale-110 transition duration-200"
+                class="w-full text-center bg-indigo-500 text-stone-100 px-3 py-2 rounded shadow-md transform hover:scale-110 transition duration-200"
               >
-                Descargar CV
+                <span data-i18n="descargar_cv">Descargar CV</span>
                 <i class="fas fa-arrow-down text-sm ml-2"></i>
               </a>
             </div>
@@ -277,7 +298,7 @@
             <div id="contacto" class="mt-10 md:mt-5 p-8 rounded-2xl border border-2 border-zinc-100">
               <p class="font-medium text-2lg text-gray-400 mb-2">
                 <i class="fas fa-briefcase mr-1"></i>
-                Contacto
+                <span data-i18n="contacto_titulo">Contacto</span>
               </p>
               <div class="flex flex-col gap-4 py-3 rounded items-start">
                 <div class="flex items-center gap-3">
@@ -286,7 +307,7 @@
                       <i class="fab fa-whatsapp text-xl"></i>
                     </a>
                   </span>
-                  <p class="m-0 font-medium text-stone-500">(+52) 461-335-3002</p>
+                  <p class="m-0 font-medium text-stone-500" data-i18n="contacto_whatsapp">(+52) 461-335-3002</p>
                 </div>
                 <div class="flex items-center gap-3">
                   <span class="w-9 h-9 flex items-center justify-center rounded-full shadow-md hover:scale-125 transition">
@@ -294,7 +315,7 @@
                       <i class="fab fa-linkedin text-xl"></i>
                     </a>
                   </span>
-                  <p class="m-0 font-medium text-stone-500">LinkedIn</p>
+                  <p class="m-0 font-medium text-stone-500" data-i18n="contacto_linkedin">LinkedIn</p>
                 </div>
               </div>
             </div>
@@ -311,17 +332,21 @@
         ></div>
         <div class="max-w-7xl mx-auto px-6 font-medium text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4">
           <div class="flex gap-6">
-            <a href="#sobre-mi" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Sobre Mí</a>
-            <a href="#experiencia" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Experiencia</a>
-            <a href="#projects" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Proyectos</a>
-            <a href="#contacto" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Contacto</a>
+            <a href="#sobre-mi" data-i18n="menu_sobre_mi" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Sobre Mí</a>
+            <a href="#experiencia" data-i18n="menu_experiencia" class="hover:text-indigo-500 hover:text-base transition-all duration-100">
+              Experiencia
+            </a>
+            <a href="#projects" data-i18n="menu_proyectos" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Proyectos</a>
+            <a href="#contacto" data-i18n="menu_contacto" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Contacto</a>
           </div>
-          <div class="text-zinc-400">&copy;2025 Danlakelake. Todos los derechos reservados.</div>
+          <span class="text-zinc-400" data-i18n="footer_copyright">&copy;2025 Danlakelake. Todos los derechos reservados.</span>
         </div>
       </footer>
     </main>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>
+    <!-- Script Idioma -->
+    <script src="scripts/lang.js"></script>
   </body>
 </html>
