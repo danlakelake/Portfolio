@@ -53,10 +53,12 @@
         <!-- Sobre Mí -->
         <section
           id="sobre-mi"
-          class="flex flex-col max-w-3xl mx-auto text-center items-center px-8 pt-7 md:pt-16 pb-10 md:pb-16 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s"
+          class="flex flex-col max-w-3xl mx-auto text-center items-center px-8 pt-7 md:pt-16 pb-7 md:pb-14 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s"
         >
           <div class="cursor-pointer w-40 h-40 rounded-full overflow-hidden shadow-md hover:scale-130 transform transition-transform duration-300">
-            <img src="resources/images/podcast/logo_podcast.webp" alt="Logo Podcast" class="w-full h-full object-cover object-center" />
+            <a href="https://open.spotify.com/show/4mBiWHifjQWEL5oSLpPKrv?si=f6629d3f433d43d9" target="_blank">
+              <img src="resources/images/podcast/logo_podcast.webp" alt="Logo Podcast" class="w-full h-full object-cover object-center" />
+            </a>
           </div>
           <h1 class="text-4xl font-bold tracking-tight">
             <p>
@@ -70,94 +72,27 @@
           </h1>
           <p class="text-base text-zinc-500 italic" data-i18n="desc_podcast">
             Un proyecto alterno en el que llevo trabajando aproximadamente
-            <strong id="time_podcast">5 meses</strong>
-            . En él tratamos temas sin guion, como noticias y conversaciones sin filtros, compartiendo reflexiones y experiencias que buscan inspirar,
-            informar y entretener, siempre con buen humor y un estilo cercano y auténtico.
+            <b>5 meses</b>
+            . En él tratamos temas sin guion, como noticias y conversaciones sin filtros, compartiendo reflexiones y experiencias que buscan
+            <b>inspirar</b>
+            ,
+            <b>informar</b>
+            y
+            <b>entretener</b>
+            , siempre con buen humor y un estilo cercano y auténtico.
           </p>
           <!-- Redes Sociales -->
           <div class="flex space-x-5 -rotate-2">
-            <a href="https://www.behance.net/danlakelak6237" target="_blank" class="text-green-500 transition -rotate-2">
+            <a
+              href="https://open.spotify.com/show/4mBiWHifjQWEL5oSLpPKrv?si=f6629d3f433d43d9"
+              target="_blank"
+              class="text-green-500 transition -rotate-2"
+            >
               <i class="fab fa-spotify fa-2x hover:scale-150 transition-all duration-200"></i>
             </a>
             <a href="https://www.facebook.com/elrincondedanmx" target="_blank" class="text-indigo-500 transition">
               <i class="fab fa-facebook fa-2x hover:scale-150 transition-all duration-200"></i>
             </a>
-          </div>
-        </section>
-        <!-- Seccion Proyectos -->
-        <section id="projects" class="flex flex-col items-center px-8 pb-8 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s">
-          <div class="w-full max-w-3xl flex items-center justify-center mb-10">
-            <div
-              class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_13px]"
-              style="
-                background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
-              "
-            ></div>
-            <h2
-              data-i18n="episodios_titulo"
-              class="text-4xl font-bold tracking-tight -rotate-3 px-4 cursor-pointer hover:text-5xl transition-all duration-200"
-            >
-              Episodios
-            </h2>
-            <div
-              class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_10px]"
-              style="
-                background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
-              "
-            ></div>
-          </div>
-          <!-- Galería Slide-->
-          <div class="swiper relative w-full">
-            <div class="swiper-wrapper px-6 py-4">
-              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
-                <a href="https://www.behance.net/gallery/230420171/Empeno-Facil-Website-EzCorp" target="_blank">
-                  <img
-                    src="resources/images/projects/ef.webp"
-                    class="w-69 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
-                <a href="https://www.behance.net/gallery/159214533/Landing-Smart-Based-on-iSmart-Template" target="_blank">
-                  <img
-                    src="resources/images/projects/smart.webp"
-                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
-                <a href="https://www.behance.net/gallery/145435859/Voice-Recognition-System-(Frontend-Layout-Interface)" target="_blank">
-                  <img
-                    src="resources/images/projects/vrs.webp"
-                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
-                <a href="https://www.behance.net/gallery/92066535/Vefcon-Website">
-                  <img
-                    src="resources/images/projects/vefcon.webp"
-                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
-                <a href="https://www.behance.net/gallery/92066111/Azell-Website" target="_blank">
-                  <img
-                    src="resources/images/projects/azell.webp"
-                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
-                <a href="https://www.behance.net/gallery/92067579/Medical-Meeting" target="_blank">
-                  <img
-                    src="resources/images/projects/mm.webp"
-                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
-                  />
-                </a>
-              </div>
-            </div>
           </div>
         </section>
       </main>

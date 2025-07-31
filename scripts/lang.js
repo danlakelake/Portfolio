@@ -5,6 +5,7 @@ const translations = {
     menu_experiencia: 'Experiencia',
     menu_proyectos: 'Proyectos',
     menu_contacto: 'Contacto',
+    menu_otros: 'Otros',
     saludo: '¡Hola!, Soy',
     nombre: 'Daniel',
     descripcion:
@@ -36,12 +37,16 @@ const translations = {
     telefono: '(+52) 461-335-3002',
     linkedin: 'LinkedIn',
     footer_copyright: '©2025 Danlakelake. Todos los derechos reservados.',
+    // Traducciones Podcast
+    desc_podcast:
+      '  Un proyecto alterno en el que llevo trabajando aproximadamente <b>5 meses</b> . En él tratamos temas sin guion, como noticias y conversaciones sin filtros, compartiendo reflexiones y experiencias que buscan <b>inspirar</b>, <b>informar</b> y <b>entretener</b>, siempre con buen humor y un estilo cercano y auténtico.',
   },
   en: {
     menu_sobre_mi: 'About Me',
     menu_experiencia: 'Experience',
     menu_proyectos: 'Projects',
     menu_contacto: 'Contact',
+    menu_otros: 'Other',
     saludo: '¡Hello!, Im',
     nombre: 'Daniel',
     descripcion:
@@ -73,6 +78,9 @@ const translations = {
     telefono: '(+52) 461-335-3002',
     linkedin: 'LinkedIn',
     footer_copyright: '©2025 Danlakelake. All rights reserved.',
+    // Traducciones Podcast
+    desc_podcast:
+      'An alternate project I have been working on for about <b>5 months</b>. In it, we cover unscripted topics, such as news and unfiltered conversations, sharing reflections and experiences that aim to <strong>inspire</strong>, <strong>inform</strong>, and <strong>entertain</strong>, always with good humor and a close, authentic style',
   },
 };
 
