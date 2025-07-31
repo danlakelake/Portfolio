@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Other Projects</title>
+  </head>
+  <!-- Cuerpo -->
+  <body class="bg-stone-100 text-gray-700">
+    <!-- Div Hoja Envolvente -->
+    <div class="max-w-7xl mx-auto bg-white sm:px-0 lg:px-30 py-2 md:py-5">
+      <!-- Switch Idioma y Menu Toggle Responsive -->
+      <div id="langMenuDiv" class="w-full flex flex-row justify-between md:justify-end items-center px-7 md:px-12 py-2 md:py-0">
+        <div class="py-0 rotate-2">
+          <button
+            id="langSwitch"
+            class="bg-indigo-500 text-white px-4 py-2 rounded-full cursor-pointer shadow-md hover:bg-indigo-600 transition font-bold flex items-center gap-2"
+            aria-label="Cambiar idioma"
+          >
+            <i class="fas fa-globe"></i>
+            <span id="langLabel">ES</span>
+          </button>
+        </div>
+        <div class="md:hidden">
+          <button id="menuToggle" class="text-gray-700 text-2xl">
+            <i id="icon_menu" class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Menu Web -->
+      <nav id="mainMenu" class="hidden md:flex justify-center my-0 rotate-2 animate__animated animate__fadeIn z-1">
+        <ul
+          class="block px-9 md:px-13 py-4 md:py-3 space-x-6 space-y-4 md:space-y-0 text-sm font-medium md:flex bg-white border-none border border-gray-200 rounded-4xl shadow-none md:shadow-md"
+        >
+          <!-- Menu Links -->
+          <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
+            <a href="index.html" data-i18n="menu_sobre_mi">Sobre Mí</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Contenido Principal -->
+      <main>
+        <!-- Sobre Mí -->
+        <section
+          id="sobre-mi"
+          class="flex flex-col max-w-3xl mx-auto text-center items-center px-8 pt-7 md:pt-16 pb-10 md:pb-16 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s"
+        >
+          <div class="cursor-pointer w-40 h-40 rounded-full overflow-hidden shadow-md hover:scale-130 transform transition-transform duration-300">
+            <img src="resources/images/podcast/logo_podcast.webp" alt="Logo Podcast" class="w-full h-full object-cover object-center" />
+          </div>
+          <h1 class="text-4xl font-bold tracking-tight">
+            <p>
+              Podcast
+              <span id="emoji" class="transition-all duration-200">🎙️</span>
+            </p>
+            <a class="text-4xl cursor-pointer text-indigo-500 hover:text-5xl transition-all duration-200">
+              El Rincón de Dan
+              <i class="fab fa-spotify fa-md text-green-500 transition-all duration-200"></i>
+            </a>
+          </h1>
+          <p class="text-base text-zinc-500 italic" data-i18n="desc_podcast">
+            Un proyecto alterno en el que llevo trabajando aproximadamente
+            <strong id="time_podcast">5 meses</strong>
+            . En él tratamos temas sin guion, como noticias y conversaciones sin filtros, compartiendo reflexiones y experiencias que buscan inspirar,
+            informar y entretener, siempre con buen humor y un estilo cercano y auténtico.
+          </p>
+          <!-- Redes Sociales -->
+          <div class="flex space-x-5 -rotate-2">
+            <a href="https://www.behance.net/danlakelak6237" target="_blank" class="text-green-500 transition -rotate-2">
+              <i class="fab fa-spotify fa-2x hover:scale-150 transition-all duration-200"></i>
+            </a>
+            <a href="https://www.facebook.com/elrincondedanmx" target="_blank" class="text-indigo-500 transition">
+              <i class="fab fa-facebook fa-2x hover:scale-150 transition-all duration-200"></i>
+            </a>
+          </div>
+        </section>
+        <!-- Seccion Proyectos -->
+        <section id="projects" class="flex flex-col items-center px-8 pb-8 space-y-6 animate__animated animate__fadeInLeft animate__delay-0.7s">
+          <div class="w-full max-w-3xl flex items-center justify-center mb-10">
+            <div
+              class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_13px]"
+              style="
+                background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
+              "
+            ></div>
+            <h2
+              data-i18n="episodios_titulo"
+              class="text-4xl font-bold tracking-tight -rotate-3 px-4 cursor-pointer hover:text-5xl transition-all duration-200"
+            >
+              Episodios
+            </h2>
+            <div
+              class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_10px]"
+              style="
+                background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
+              "
+            ></div>
+          </div>
+          <!-- Galería Slide-->
+          <div class="swiper relative w-full">
+            <div class="swiper-wrapper px-6 py-4">
+              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/230420171/Empeno-Facil-Website-EzCorp" target="_blank">
+                  <img
+                    src="resources/images/projects/ef.webp"
+                    class="w-69 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/159214533/Landing-Smart-Based-on-iSmart-Template" target="_blank">
+                  <img
+                    src="resources/images/projects/smart.webp"
+                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/145435859/Voice-Recognition-System-(Frontend-Layout-Interface)" target="_blank">
+                  <img
+                    src="resources/images/projects/vrs.webp"
+                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/92066535/Vefcon-Website">
+                  <img
+                    src="resources/images/projects/vefcon.webp"
+                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/92066111/Azell-Website" target="_blank">
+                  <img
+                    src="resources/images/projects/azell.webp"
+                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide rounded-xl -rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/92067579/Medical-Meeting" target="_blank">
+                  <img
+                    src="resources/images/projects/mm.webp"
+                    class="w-68 h-74 shadow-md object-cover rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="pt-0 pb-5 md:pb-6 -rotate-1">
+        <div
+          class="w-full h-8 bg-no-repeat mb-5 md:mb-8 bg-center bg-[length:100%_14px] mb-4"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 14\' preserveAspectRatio=\'none\'%3E%3Cpath d=\'M0 14 L6 0 L12 14 L18 0 L24 14 L30 0 L36 14 L42 0 L48 14 L54 0 L60 14 L66 0 L72 14 L78 0 L84 14 L90 0 L96 14 L102 0 L108 14 L114 0 L120 14 L126 0 L132 14 L138 0 L144 14 L150 0 L156 14 L162 0 L168 14 L174 0 L180 14 L186 0 L192 14 L198 0 L204 14 L210 0 L216 14 L222 0 L228 14 L234 0 L240 14 L246 0 L252 14 L258 0 L264 14 L270 0 L276 14 L282 0 L288 14 L294 0 L300 14\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'2\'/%3E%3C/svg%3E');
+          "
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 font-medium text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex gap-6">
+            <a href="index.html" data-i18n="menu_sobre_mi" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Sobre Mí</a>
+          </div>
+          <span class="text-zinc-400" data-i18n="footer_copyright">&copy;2025 Danlakelake. Todos los derechos reservados.</span>
+        </div>
+      </footer>
+      <!-- Termina Footer -->
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- Script Idioma -->
+    <script src="scripts/lang.js"></script>
+  </body>
+</html>
