@@ -289,13 +289,14 @@
             <div class="col-span-12 md:col-span-5 px-0 md:px-10 py-5 md:py-0 -rotate-2">
               <p class="font-medium text-2lg text-gray-400" data-i18n="cv_actualizado">CV Actualizado - 2025</p>
               <div class="mt-2 mb-6 p-3 overflow-hidden rounded bg-stone-100">
-                <img src="resources/images/cv.webp" class="object-cover" loading="lazy" />
+                <img id="cvPreview" src="resources/images/cv/cv.webp" class="object-cover" loading="lazy" />
               </div>
               <div class="flex items-center">
                 <a
+                  id="cvDownload"
                   href="resources/pdf/CV-DanielAguilar.pdf"
                   target="_blank"
-                  download="CV-Daniel-Aguilar.pdf"
+                  download="CV-DanielAguilar.pdf"
                   class="w-full text-center bg-indigo-500 text-stone-100 px-3 py-2 rounded shadow-md transform hover:scale-110 transition duration-200"
                 >
                   <span data-i18n="descargar_cv">Descargar CV</span>

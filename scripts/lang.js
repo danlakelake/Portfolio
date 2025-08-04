@@ -84,35 +84,47 @@ const translations = {
   },
 };
 
-// Función para cambio de idioma
+// Función cambio de Idioma
 function setLanguage(lang) {
   // Guarda el idioma actual en localStorage
   localStorage.setItem('language', lang);
 
-  // Cambia el texto del botón idioma
+  // Cambia label del botón idioma
   const langLabel = document.getElementById('langLabel');
-  langLabel ? (langLabel.textContent = lang.toUpperCase()) : null;
+  if (langLabel) langLabel.textContent = lang.toUpperCase();
 
-  // Actualiza el contenido de los elementos: data-i18n
+  // Actualiza el contenido de los elementos data-i18n
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
       el.innerHTML = translations[lang][key];
     }
   });
+
+  // Cambio del CV dependiendo el idioma (preview y archivo)
+  const cvPreview = document.getElementById('cvPreview');
+  const cvDownload = document.getElementById('cvDownload');
+
+  if (cvPreview && cvDownload) {
+    if (lang === 'en') {
+      cvPreview.src = 'resources/images/cv/resume.webp';
+      cvDownload.href = 'resources/pdf/Resume-DanielAguilar.pdf';
+      cvDownload.download = 'Resume-DanielAguilar.pdf';
+    } else {
+      cvPreview.src = 'resources/images/cv/cv.webp';
+      cvDownload.href = 'resources/pdf/CV-DanielAguilar.pdf';
+      cvDownload.download = 'CV-DanielAguilar.pdf';
+    }
+  }
 }
 
-// Detecta el idioma inicial
+// Detecta el idioma actual
 let currentLang = localStorage.getItem('language') || 'es';
 setLanguage(currentLang);
 
 // Evento botón para cambio de idioma
 document.getElementById('langSwitch').addEventListener('click', () => {
   console.log('diste click');
-  if (currentLang === 'es') {
-    currentLang = 'en';
-  } else {
-    currentLang = 'es';
-  }
-  setLanguage(currentLang);
+  currentLang = currentLang === 'es' ? 'en' : 'es';
+  setLanguage(currentLang); // 🔹 Ahora sí actualiza textos y CV
 });
