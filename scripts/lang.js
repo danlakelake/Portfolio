@@ -126,5 +126,5 @@ setLanguage(currentLang);
 document.getElementById('langSwitch').addEventListener('click', () => {
   console.log('diste click');
   currentLang = currentLang === 'es' ? 'en' : 'es';
-  setLanguage(currentLang); // 🔹 Ahora sí actualiza textos y CV
+  setLanguage(currentLang);
 });
