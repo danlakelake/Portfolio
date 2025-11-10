@@ -27,7 +27,7 @@ const translations = {
       'Como desarrollador frontend, colaboré en el desarrollo del sistema interno de la empresa utilizando Electron (aplicación de escritorio) y React (web). Trabajé en conjunto con otros departamentos como Backend, Base de Datos y Desarrollo Móvil. Nuestro equipo estaba a cargo de dar seguimiento a los requisitos del proyecto, así como de revisar problemas e implementar mejoras.',
     exp2_tecnologias: 'React, Semantic UI, Api Rest, Swagger, Webpack, Github.',
     exp3_fecha: '| Nov 2018 - Jul 2020 - 1 año 9 meses',
-    exp3_empresa: 'Dood S.A.P.I. - Web Designer/FE Web Dev',
+    exp3_empresa: 'Dood S.A.P.I. - Web Designer & FE Web Developer',
     exp3_desc:
       'Participé activamente en el diseño y desarrollo de estrategias comerciales mediante sitios web. Trabajé en colaboración con los equipos de software, diseño y marketing para asegurar una ejecución integral. Me encargué del seguimiento y la mejora continua de los requerimientos del cliente, abarcando tanto aspectos de diseño como de funcionalidad y optimización. Además, gestioné el mantenimiento del sitio y contribuí al desarrollo de nuevos productos.',
     exp3_tecnologias: 'React, Semantic UI, Api Rest, Swagger, Webpack, Github.',
@@ -68,7 +68,7 @@ const translations = {
       "As a frontend developer, I collaborated in developing the company's internal system using Electron (desktop app) and React (web). I worked alongside other departments like Backend, Database, and Mobile Development. Our team was responsible for following up on project requirements, reviewing issues, and implementing improvements.",
     exp2_tecnologias: 'React, Semantic UI, Api Rest, Swagger, Webpack, Github.',
     exp3_fecha: '| Nov 2018 - Jul 2020 - 1 year 9 months',
-    exp3_empresa: 'Dood S.A.P.I. - Web Designer/FE Web Dev',
+    exp3_empresa: 'Dood S.A.P.I. - Web Designer & FE Web Developer',
     exp3_desc:
       'I actively participated in designing and developing commercial strategies through websites. I worked in collaboration with software, design, and marketing teams to ensure comprehensive execution. I was responsible for tracking and continuous improvement of client requirements, covering both design and functionality optimization. Additionally, I managed site maintenance and contributed to developing new products.',
     exp3_tecnologias: 'React, Semantic UI, Api Rest, Swagger, Webpack, Github.',
