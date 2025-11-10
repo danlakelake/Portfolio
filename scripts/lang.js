@@ -17,7 +17,7 @@ const translations = {
     ver_mas: 'Ver más',
     ver_menos: 'Ver menos',
     exp1_fecha: '| Dic 2022 - Ene 2025 - 2 años 2 mes',
-    exp1_empresa: 'Consultoría E3 - Webmaster',
+    exp1_empresa: 'Consultoría E3 - Frontend Web Developer (CMS Focused) | Server Administrator',
     exp1_desc:
       'Trabajé en el área de desarrollo web, desempeñándome como webmaster. Mi área se especializó en el desarrollo de sitios web para diversos clientes, utilizando tecnologías como WordPress, Shopify y Craft CMS, además de administrar y mantener los servidores que alojaban los proyectos. Nuestro proyecto más destacado consistió en la creación y mantenimiento de varios sitios web para la empresa estadounidense EzCorp, con un enfoque principal en su línea de operaciones para Latinoamérica, desarrollados principalmente con Craft CMS.',
     exp1_tecnologias: 'Craft CMS, Javascript, Bootstrap, Webpack, Api Rest, Linux, GitLab, WordPress, WooCommerce, SEO, Google Search Console.',
@@ -58,7 +58,7 @@ const translations = {
     ver_mas: 'View more',
     ver_menos: 'View less',
     exp1_fecha: '| Dec 2022 - Jan 2025 - 2 years 2 months',
-    exp1_empresa: 'E3 Consulting - Webmaster',
+    exp1_empresa: 'E3 Consulting - Frontend Web Developer (CMS Focused) | Server Administrator',
     exp1_desc:
       ' I worked in the web development area, serving as a webmaster. My team specialized in developing websites for various clients using technologies such as WordPress, Shopify, and Craft CMS, while also managing and maintaining the servers hosting these projects. Our most notable project was the creation and maintenance of several websites for the US-based company EzCorp, focusing on their operations in Latin America, primarily developed with Craft CMS.',
     exp1_tecnologias: 'Craft CMS, Javascript, Bootstrap, Webpack, Api Rest, Linux, GitLab, WordPress, WooCommerce, SEO, Google Search Console.',
