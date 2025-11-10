@@ -19,7 +19,7 @@ const translations = {
     exp1_fecha: '| Dic 2022 - Ene 2025 - 2 años 2 mes',
     exp1_empresa: 'Consultoría E3 - Webmaster',
     exp1_desc:
-      'Colaboré en el área de desarrollo web, desempeñándome como webmaster. Mi área se especializó en el desarrollo de sitios web para diversos clientes, utilizando una variedad de tecnologías. Nuestro proyecto más destacado consistió en la creación y mantenimiento de varios sitios web para la empresa estadounidense EzCorp, con un enfoque principal en su línea de operaciones para Latinoamérica, desarrollados principalmente con Craft CMS.',
+      'Trabajé en el área de desarrollo web, desempeñándome como webmaster. Mi área se especializó en el desarrollo de sitios web para diversos clientes, utilizando tecnologías como WordPress, Shopify y Craft CMS, además de administrar y mantener los servidores que alojaban los proyectos. Nuestro proyecto más destacado consistió en la creación y mantenimiento de varios sitios web para la empresa estadounidense EzCorp, con un enfoque principal en su línea de operaciones para Latinoamérica, desarrollados principalmente con Craft CMS.',
     exp1_tecnologias: 'Craft CMS, Javascript, Bootstrap, Webpack, Api Rest, Linux, GitLab, WordPress, WooCommerce, SEO, Google Search Console.',
     exp2_fecha: '| Sep 2020 - Nov 2022 - 2 años 3 meses',
     exp2_empresa: 'Morpheus Dss - Frontend Web Developer',
@@ -60,7 +60,7 @@ const translations = {
     exp1_fecha: '| Dec 2022 - Jan 2025 - 2 years 2 months',
     exp1_empresa: 'E3 Consulting - Webmaster',
     exp1_desc:
-      'I collaborated in the web development area, working as a webmaster. My team specialized in developing websites for various clients using a variety of technologies. Our most outstanding project involved creating and maintaining several websites for the American company EzCorp, primarily focusing on their Latin America operations line, mainly developed with Craft CMS.',
+      ' I worked in the web development area, serving as a webmaster. My team specialized in developing websites for various clients using technologies such as WordPress, Shopify, and Craft CMS, while also managing and maintaining the servers hosting these projects. Our most notable project was the creation and maintenance of several websites for the US-based company EzCorp, focusing on their operations in Latin America, primarily developed with Craft CMS.',
     exp1_tecnologias: 'Craft CMS, Javascript, Bootstrap, Webpack, Api Rest, Linux, GitLab, WordPress, WooCommerce, SEO, Google Search Console.',
     exp2_fecha: '| Sep 2020 - Nov 2022 - 2 years 3 months',
     exp2_empresa: 'Morpheus Dss - Frontend Web Developer',
