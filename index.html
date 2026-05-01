@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Portfolio Website</title>
+    <title data-i18n="page_title"></title>
   </head>
   <!-- Cuerpo -->
   <body class="bg-stone-100 text-gray-700">
@@ -28,7 +28,7 @@
             aria-label="Cambiar idioma"
           >
             <i class="fas fa-globe"></i>
-            <span id="langLabel">ES</span>
+            <span id="langLabel"></span>
           </button>
         </div>
         <div class="md:hidden">
@@ -44,19 +44,19 @@
         >
           <!-- Menu Links -->
           <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#sobre-mi" data-i18n="menu_sobre_mi">Sobre Mí</a>
+            <a href="#sobre-mi" data-i18n="menu_sobre_mi"></a>
           </li>
           <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#experiencia" data-i18n="menu_experiencia">Experiencia</a>
+            <a href="#experiencia" data-i18n="menu_experiencia"></a>
           </li>
           <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#projects" data-i18n="menu_proyectos">Proyectos</a>
+            <a href="#projects" data-i18n="menu_proyectos"></a>
           </li>
           <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="#contacto" data-i18n="menu_contacto">Contacto</a>
+            <a href="#contacto" data-i18n="menu_contacto"></a>
           </li>
           <li class="menu-links hover:text-indigo-500 hover:text-base transition-all duration-100">
-            <a href="other-projects.html" data-i18n="menu_otros">Otros</a>
+            <a href="other-projects.html" data-i18n="menu_otros"></a>
           </li>
         </ul>
       </nav>
@@ -71,27 +71,13 @@
             <img src="resources/images/profile.webp" alt="Daniel Aguilar" class="w-full h-full object-cover" />
           </div>
           <h1 class="text-4xl font-bold tracking-tight">
-            <span data-i18n="saludo">¡Hola!, Soy</span>
+            <span data-i18n="saludo"></span>
             <a id="nameLink" class="text-4xl cursor-pointer text-indigo-500 hover:text-5xl transition-all duration-200">
-              Daniel
+              <span data-i18n="nombre"></span>
               <span id="emoji" class="transition-all duration-200">👋🏻</span>
             </a>
           </h1>
-          <p class="text-base text-zinc-500 italic" data-i18n="descripcion">
-            Diseñador digital de profesión y desarrollador frontend apasionado por crear experiencias web funcionales y atractivas. Trabajo con
-            <b>HTML</b>
-            ,
-            <b>CSS</b>
-            ,
-            <b>Bootstrap</b>
-            ,
-            <b>Tailwind</b>
-            ,
-            <b>JavaScript</b>
-            y
-            <b>Craft CMS</b>
-            más recientemente.
-          </p>
+          <p class="text-base text-zinc-500 italic" data-i18n="descripcion"></p>
           <!-- Redes Sociales -->
           <div class="flex space-x-5 -rotate-2">
             <a href="https://www.linkedin.com/in/danielaguilar0395/" target="_blank" class="text-gray-400 hover:text-indigo-500 transition">
@@ -111,25 +97,32 @@
             <div
               class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_13px]"
               style="
-                background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
+                background-image: url(&quot;data:image/svg+xml,%3Csvg width='300' height='10' viewBox='0 0 300 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10' stroke='%23ebe6e7' fill='none' stroke-width='4'/%3E%3C/svg%3E&quot;);
               "
             ></div>
             <h2
               data-i18n="proyectos_titulo"
               class="text-4xl font-bold tracking-tight -rotate-3 px-4 cursor-pointer hover:text-5xl transition-all duration-200"
             >
-              Proyectos
             </h2>
             <div
               class="w-full h-10 bg-no-repeat bg-center bg-[length:100%_10px]"
               style="
-                background-image: url('data:image/svg+xml,%3Csvg width=\'300\' height=\'10\' viewBox=\'0 0 300 10\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'4\'/%3E%3C/svg%3E');
+                background-image: url(&quot;data:image/svg+xml,%3Csvg width='300' height='10' viewBox='0 0 300 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 L37.5 0 L75 10 L112.5 0 L150 10 L187.5 0 L225 10 L262.5 0 L300 10' stroke='%23ebe6e7' fill='none' stroke-width='4'/%3E%3C/svg%3E&quot;);
               "
             ></div>
           </div>
           <!-- Galería Slide-->
           <div class="swiper relative w-full">
             <div class="swiper-wrapper px-6 py-4">
+              <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
+                <a href="https://www.behance.net/gallery/248561547/Expreso-Quertaro-News-Website-Arca-Media-Digital" target="_blank">
+                  <img
+                    src="resources/images/projects/expresoqro.webp"
+                    class="w-69 h-74 shadow-md object-cover rounded-xl transition-transform duration-200 ease-in-out hover:scale-110"
+                  />
+                </a>
+              </div>
               <div class="swiper-slide rounded-xl rotate-2 cursor-grab active:cursor-grabbing">
                 <a href="https://www.behance.net/gallery/230420171/Empeno-Facil-Website-EzCorp" target="_blank">
                   <img
@@ -191,12 +184,11 @@
               class="text-4xl font-bold tracking-tight rotate-2 px-4 cursor-pointer hover:text-5xl transition-all duration-200"
               data-i18n="experiencia_titulo"
             >
-              Experiencia
             </h2>
             <div
               class="h-10 flex-1 bg-no-repeat bg-center bg-[length:100%_12px]"
               style="
-                background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 14\' preserveAspectRatio=\'none\'%3E%3Cpath d=\'M0 14 L10 0 L20 14 L30 0 L40 14 L50 0 L60 14 L70 0 L80 14 L90 0 L100 14 L110 0 L120 14 L130 0 L140 14 L150 0 L160 14 L170 0 L180 14 L190 0 L200 14 L210 0 L220 14 L230 0 L240 14 L250 0 L260 14 L270 0 L280 14 L290 0 L300 14\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'2.5\'/%3E%3C/svg%3E');
+                background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 14' preserveAspectRatio='none'%3E%3Cpath d='M0 14 L10 0 L20 14 L30 0 L40 14 L50 0 L60 14 L70 0 L80 14 L90 0 L100 14 L110 0 L120 14 L130 0 L140 14 L150 0 L160 14 L170 0 L180 14 L190 0 L200 14 L210 0 L220 14 L230 0 L240 14 L250 0 L260 14 L270 0 L280 14 L290 0 L300 14' stroke='%23ebe6e7' fill='none' stroke-width='2.5'/%3E%3C/svg%3E&quot;);
               "
             ></div>
           </div>
@@ -204,32 +196,25 @@
           <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
             <!-- Experiencias Laborales -->
             <div class="col-span-12 md:col-span-7">
-              <p class="font-medium text-2lg text-gray-400 mb-5" data-i18n="ultimas_experiencias">Ultimas 3 Experiencias Laborales</p>
+              <p class="font-medium text-2lg text-gray-400 mb-5" data-i18n="ultimas_experiencias"></p>
               <!-- Exp. 1 -->
               <article
                 class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
               >
-                <span class="text-sm text-gray-400" data-i18n="exp1_fecha">| Dic 2022 - Ene 2025 - 2 años 2 mes</span>
-                <h3 class="text-lg font-bold mb-2" data-i18n="exp1_empresa">Consultoría E3 - Webmaster</h3>
+                <span class="text-sm text-gray-400" data-i18n="exp1_fecha"></span>
+                <h3 class="text-lg font-bold mb-2" data-i18n="exp1_empresa"></h3>
                 <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
-                  <p data-i18n="exp1_desc">
-                    Colaboré en el área de desarrollo web, desempeñándome como webmaster. Mi área se especializó en el desarrollo de sitios web para
-                    diversos clientes, utilizando una variedad de tecnologías. Nuestro proyecto más destacado consistió en la creación y mantenimiento
-                    de varios sitios web para la empresa estadounidense EzCorp, con un enfoque principal en su línea de operaciones para
-                    Latinoamérica, desarrollados principalmente con Craft CMS.
-                  </p>
+                  <p data-i18n="exp1_desc"></p>
                   <p class="font-medium mt-4">
-                    <span data-i18n="label_tecnologias">Tecnologías:</span>
-                    <span class="font-normal" data-i18n="exp1_tecnologias">
-                      Craft CMS, Javascript, Bootstrap, Webpack, Api Rest, Linux, GitLab, WordPress, WooCommerce, SEO, Google Search Console.
-                    </span>
+                    <span data-i18n="label_tecnologias"></span>
+                    <span class="font-normal" data-i18n="exp1_tecnologias"></span>
                   </p>
                 </div>
                 <button
                   class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
                 >
-                  <span data-i18n="ver_mas">Ver más</span>
-                  <span data-i18n="ver_menos" style="display: none">Ver menos</span>
+                  <span data-i18n="ver_mas"></span>
+                  <span data-i18n="ver_menos" style="display: none"></span>
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </article>
@@ -237,57 +222,69 @@
               <article
                 class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
               >
-                <span class="text-sm text-gray-400" data-i18n="exp2_fecha">| Sep 2020 - Nov 2022 - 2 años 3 meses</span>
-                <h3 class="text-lg font-bold mb-2" data-i18n="exp2_empresa">Morpheus Dss - Frontend Web Developer</h3>
+                <span class="text-sm text-gray-400" data-i18n="exp2_fecha"></span>
+                <h3 class="text-lg font-bold mb-2" data-i18n="exp2_empresa"></h3>
                 <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
-                  <p data-i18n="exp2_desc">
-                    Como desarrollador frontend, colaboré en el desarrollo del sistema interno de la empresa utilizando Electron (aplicación de
-                    escritorio) y React (web). Trabajé en conjunto con otros departamentos como Backend, Base de Datos y Desarrollo Móvil. Nuestro
-                    equipo estaba a cargo de dar seguimiento a los requisitos del proyecto, así como de revisar problemas e implementar mejoras.
-                  </p>
+                  <p data-i18n="exp2_desc"></p>
                   <p class="font-medium mt-4">
-                    <span data-i18n="label_tecnologias">Tecnologías:</span>
-                    <span data-i18n="exp2_tecnologias" class="font-normal">React, Semantic UI, Api Rest, Swagger, Webpack, Github.</span>
+                    <span data-i18n="label_tecnologias"></span>
+                    <span data-i18n="exp2_tecnologias" class="font-normal"></span>
                   </p>
                 </div>
                 <button
                   class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
                 >
-                  <span data-i18n="ver_mas">Ver más</span>
-                  <span data-i18n="ver_menos" style="display: none">Ver menos</span>
+                  <span data-i18n="ver_mas"></span>
+                  <span data-i18n="ver_menos" style="display: none"></span>
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </article>
               <!-- Exp. 3 -->
               <article
-                class="bg-white p-6 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
+                class="bg-white p-6 mb-5 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
               >
-                <span class="text-sm text-gray-400" data-i18n="exp3_fecha">| Nov 2018 - Jul 2020 - 1 año 9 meses</span>
-                <h3 class="text-lg font-bold mb-2" data-i18n="exp3_empresa">Dood S.A.P.I. - Web Designer/FE Web Dev</h3>
+                <span class="text-sm text-gray-400" data-i18n="exp3_fecha"></span>
+                <h3 class="text-lg font-bold mb-2" data-i18n="exp3_empresa"></h3>
                 <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
-                  <p data-i18n="exp3_desc">
-                    Participé activamente en el diseño y desarrollo de estrategias comerciales mediante sitios web. Trabajé en colaboración con los
-                    equipos de software, diseño y marketing para asegurar una ejecución integral. Me encargué del seguimiento y la mejora continua de
-                    los requerimientos del cliente, abarcando tanto aspectos de diseño como de funcionalidad y optimización. Además, gestioné el
-                    mantenimiento del sitio y contribuí al desarrollo de nuevos productos.
-                  </p>
+                  <p data-i18n="exp3_desc"></p>
                   <p class="font-medium mt-4">
-                    <span data-i18n="label_tecnologias">Tecnologías:</span>
-                    <span class="font-normal">React, Semantic UI, Api Rest, Swagger, Webpack, Github.</span>
+                    <span data-i18n="label_tecnologias"></span>
+                    <span class="font-normal" data-i18n="exp3_tecnologias"></span>
                   </p>
                 </div>
                 <button
                   class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
                 >
-                  <span data-i18n="ver_mas">Ver más</span>
-                  <span data-i18n="ver_menos" style="display: none">Ver menos</span>
+                  <span data-i18n="ver_mas"></span>
+                  <span data-i18n="ver_menos" style="display: none"></span>
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </article>
+              <!-- Exp. 4 -->
+              <article
+                class="bg-white p-6 rounded-2xl border border-zinc-100 hover:bg-stone-50 transition-all duration-300 ease-in-out cursor-pointer"
+              >
+                <span class="text-sm text-gray-400" data-i18n="exp4_fecha"></span>
+                <h3 class="text-lg font-bold mb-2" data-i18n="exp4_empresa"></h3>
+                <div class="job-desc text-gray-500 overflow-hidden line-clamp-2 transition-all duration-300 ease-in-out">
+                  <p data-i18n="exp4_desc"></p>
+                  <p class="font-medium mt-4">
+                    <span data-i18n="label_tecnologias"></span>
+                    <span class="font-normal" data-i18n="exp4_tecnologias"></span>
+                  </p>
+                </div>
+                <button
+                  class="viewMoreToggle mt-2 text-indigo-500 font-bold hover:underline cursor-pointer -rotate-2 hover:text-2xl transition-all duration-200"
+                >
+                  <span data-i18n="ver_mas"></span>
+                  <span data-i18n="ver_menos" style="display: none"></span>
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </article>
             </div>
             <!-- Cv -->
             <div class="col-span-12 md:col-span-5 px-0 md:px-10 py-5 md:py-0 -rotate-2">
-              <p class="font-medium text-2lg text-gray-400" data-i18n="cv_actualizado">CV Actualizado - 2025</p>
+              <p class="font-medium text-2lg text-gray-400" data-i18n="cv_actualizado"></p>
               <div class="mt-2 mb-6 p-3 overflow-hidden rounded bg-stone-100">
                 <img id="cvPreview" src="resources/images/cv/cv.webp" class="object-cover" loading="lazy" />
               </div>
@@ -299,7 +296,7 @@
                   download="CV-DanielAguilar.pdf"
                   class="w-full text-center bg-indigo-500 text-stone-100 px-3 py-2 rounded shadow-md transform hover:scale-110 transition duration-200"
                 >
-                  <span data-i18n="descargar_cv">Descargar CV</span>
+                  <span data-i18n="descargar_cv"></span>
                   <i class="fas fa-arrow-down text-sm ml-2"></i>
                 </a>
               </div>
@@ -307,7 +304,7 @@
               <div id="contacto" class="mt-10 md:mt-5 p-8 rounded-2xl border border-2 border-zinc-100">
                 <p class="font-medium text-2lg text-gray-400 mb-2">
                   <i class="fas fa-briefcase mr-1"></i>
-                  <span data-i18n="contacto_titulo">Contacto</span>
+                  <span data-i18n="contacto_titulo"></span>
                 </p>
                 <div class="flex flex-col gap-4 py-3 rounded items-start">
                   <div class="flex items-center gap-3">
@@ -316,7 +313,7 @@
                         <i class="fab fa-whatsapp text-xl"></i>
                       </a>
                     </span>
-                    <p class="m-0 font-medium text-stone-500" data-i18n="contacto_whatsapp">(+52) 461-335-3002</p>
+                    <p class="m-0 font-medium text-stone-500" data-i18n="contacto_whatsapp"></p>
                   </div>
                   <div class="flex items-center gap-3">
                     <span class="w-9 h-9 flex items-center justify-center rounded-full shadow-md hover:scale-125 transition">
@@ -324,7 +321,7 @@
                         <i class="fab fa-linkedin text-xl"></i>
                       </a>
                     </span>
-                    <p class="m-0 font-medium text-stone-500" data-i18n="contacto_linkedin">LinkedIn</p>
+                    <p class="m-0 font-medium text-stone-500" data-i18n="contacto_linkedin"></p>
                   </div>
                 </div>
               </div>
@@ -337,20 +334,18 @@
         <div
           class="w-full h-8 bg-no-repeat mb-5 md:mb-8 bg-center bg-[length:100%_14px] mb-4"
           style="
-            background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 14\' preserveAspectRatio=\'none\'%3E%3Cpath d=\'M0 14 L6 0 L12 14 L18 0 L24 14 L30 0 L36 14 L42 0 L48 14 L54 0 L60 14 L66 0 L72 14 L78 0 L84 14 L90 0 L96 14 L102 0 L108 14 L114 0 L120 14 L126 0 L132 14 L138 0 L144 14 L150 0 L156 14 L162 0 L168 14 L174 0 L180 14 L186 0 L192 14 L198 0 L204 14 L210 0 L216 14 L222 0 L228 14 L234 0 L240 14 L246 0 L252 14 L258 0 L264 14 L270 0 L276 14 L282 0 L288 14 L294 0 L300 14\' stroke=\'%23ebe6e7\' fill=\'none\' stroke-width=\'2\'/%3E%3C/svg%3E');
+            background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 14' preserveAspectRatio='none'%3E%3Cpath d='M0 14 L6 0 L12 14 L18 0 L24 14 L30 0 L36 14 L42 0 L48 14 L54 0 L60 14 L66 0 L72 14 L78 0 L84 14 L90 0 L96 14 L102 0 L108 14 L114 0 L120 14 L126 0 L132 14 L138 0 L144 14 L150 0 L156 14 L162 0 L168 14 L174 0 L180 14 L186 0 L192 14 L198 0 L204 14 L210 0 L216 14 L222 0 L228 14 L234 0 L240 14 L246 0 L252 14 L258 0 L264 14 L270 0 L276 14 L282 0 L288 14 L294 0 L300 14' stroke='%23ebe6e7' fill='none' stroke-width='2'/%3E%3C/svg%3E&quot;);
           "
         ></div>
         <div class="max-w-7xl mx-auto px-6 font-medium text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4">
           <div class="flex flex-col items-center md:flex-row gap-4">
-            <a href="#sobre-mi" data-i18n="menu_sobre_mi" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Sobre Mí</a>
-            <a href="#experiencia" data-i18n="menu_experiencia" class="hover:text-indigo-500 hover:text-base transition-all duration-100">
-              Experiencia
-            </a>
-            <a href="#projects" data-i18n="menu_proyectos" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Proyectos</a>
-            <a href="#contacto" data-i18n="menu_contacto" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Contacto</a>
-            <a href="other-projects.html" data-i18n="menu_otros" class="hover:text-indigo-500 hover:text-base transition-all duration-100">Otros</a>
+            <a href="#sobre-mi" data-i18n="menu_sobre_mi" class="hover:text-indigo-500 hover:text-base transition-all duration-100"></a>
+            <a href="#experiencia" data-i18n="menu_experiencia" class="hover:text-indigo-500 hover:text-base transition-all duration-100"></a>
+            <a href="#projects" data-i18n="menu_proyectos" class="hover:text-indigo-500 hover:text-base transition-all duration-100"></a>
+            <a href="#contacto" data-i18n="menu_contacto" class="hover:text-indigo-500 hover:text-base transition-all duration-100"></a>
+            <a href="other-projects.html" data-i18n="menu_otros" class="hover:text-indigo-500 hover:text-base transition-all duration-100"></a>
           </div>
-          <span class="text-zinc-400" data-i18n="footer_copyright">&copy;2025 Danlakelake. Todos los derechos reservados.</span>
+          <span class="text-zinc-400" data-i18n="footer_copyright"></span>
         </div>
       </footer>
       <!-- Termina Footer -->
