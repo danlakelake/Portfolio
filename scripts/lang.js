@@ -10,7 +10,7 @@ const translations = {
     saludo: '¡Hola!, Soy',
     nombre: 'Daniel',
     descripcion:
-      'Diseñador digital de profesión y desarrollador frontend apasionado por crear experiencias web funcionales y atractivas. Trabajo con <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b>, <b>Tailwind</b>, <b>JavaScript</b>, <b>Wordpress</b> y <b>Craft CMS</b> más recientemente.',
+      'Diseñador digital de formación y desarrollador frontend de profesión apasionado por crear experiencias web funcionales y atractivas. Trabajo con <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b>, <b>Tailwind</b>, <b>JavaScript</b>, <b>React</b>, <b>Wordpress</b> y <b>Craft CMS</b> más recientemente.',
     proyectos_titulo: 'Proyectos',
     experiencia_titulo: 'Experiencia',
     ultimas_experiencias: 'Ultimas 4 Experiencias Laborales',
@@ -59,7 +59,7 @@ const translations = {
     saludo: '¡Hello!, Im',
     nombre: 'Daniel',
     descripcion:
-      'Digital designer by profession and frontend developer passionate about creating functional and attractive web experiences. I work with <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b>, <b>Tailwind</b>, <b>JavaScript</b>, <b>Wordpress</b>, and more recently <b>Craft CMS</b>.',
+      'Digital designer by training and frontend developer by profession, passionate about creating functional and attractive web experiences. I work with <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b>, <b>Tailwind</b>, <b>JavaScript</b>, <b>React</b>, <b>Wordpress</b>, and more recently <b>Craft CMS</b>.',
     proyectos_titulo: 'Projects',
     experiencia_titulo: 'Experience',
     ultimas_experiencias: 'Last 4 Work Experiences',
