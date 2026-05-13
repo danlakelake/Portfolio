@@ -17,7 +17,7 @@ const translations = {
     label_tecnologias: 'Tecnologías:',
     ver_mas: 'Ver más',
     ver_menos: 'Ver menos',
-    exp1_fecha: '| Nov 2025 - Presente - 6 meses',
+    exp1_fecha: '| Nov 2025 - Presente',
     exp1_empresa: 'Arca Media Digital (Part-Time) - WordPress Developer | Web Hosting & Domains Administrator',
     exp1_desc:
       'Gestión integral de infraestructura web y desarrollo de sitios informativos en WordPress, abarcando desde la selección del servidor hasta la implementación y publicación final del sitio. Participé en la evaluación y recomendación del proveedor de hosting, considerando factores como rendimiento, escalabilidad, costos y seguridad.',
@@ -66,7 +66,7 @@ const translations = {
     label_tecnologias: 'Technologies:',
     ver_mas: 'View more',
     ver_menos: 'View less',
-    exp1_fecha: '| Nov 2025 - Present - 6 months',
+    exp1_fecha: '| Nov 2025 - Present',
     exp1_empresa: 'Arca Media Digital (Part-Time) - WordPress Developer | Web Hosting & Domains Administrator',
     exp1_desc:
       'Comprehensive management of web infrastructure and development of informational WordPress websites, covering everything from server selection to final implementation and deployment. Participated in the evaluation and recommendation of the hosting provider, considering factors such as performance, scalability, cost, and security.',
