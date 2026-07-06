@@ -1,0 +1,12 @@
+/* Globals */
+body {
+  background-color: var(--color-stone-100);
+  color: var(--color-gray-700);
+}
+/* Projects */
+.swiper-wrapper .swiper-slide:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+.swiper-wrapper .swiper-slide:nth-child(even) {
+  transform: rotate(2deg);
+}
