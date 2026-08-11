@@ -1,4 +1,5 @@
 // Traducciones
+const currentYear = new Date().getFullYear();
 const translations = {
   es: {
     og_title: 'Portafolio - Daniel Aguilar',
@@ -44,7 +45,7 @@ const translations = {
     exp4_desc:
       'Participé activamente en el diseño y desarrollo de estrategias comerciales mediante sitios web. Trabajé en colaboración con los equipos de software, diseño y marketing para asegurar una ejecución integral. Me encargué del seguimiento y la mejora continua de los requerimientos del cliente, abarcando tanto aspectos de diseño como de funcionalidad y optimización. Además, gestioné el mantenimiento del sitio y contribuí al desarrollo de nuevos productos.',
     exp4_tecnologias: 'React, Semantic UI, Api Rest, Swagger, Webpack, Github.',
-    cv_actualizado: 'CV Actualizado - 2025',
+    cv_actualizado: `CV Actualizado - ${currentYear}`,
     descargar_cv: 'Descargar CV',
     contacto_titulo: 'Contacto',
     contacto_whatsapp: '(+52) 461-335-3002',
@@ -100,7 +101,7 @@ const translations = {
     exp4_desc:
       'I actively participated in designing and developing commercial strategies through websites. I worked in collaboration with software, design, and marketing teams to ensure comprehensive execution. I was responsible for tracking and continuous improvement of client requirements, covering both design and functionality optimization. Additionally, I managed site maintenance and contributed to developing new products.',
     exp4_tecnologias: 'React, Semantic UI, Api Rest, Swagger, Webpack, Github.',
-    cv_actualizado: 'Updated CV - 2025',
+    cv_actualizado: `Updated CV - ${currentYear}`,
     descargar_cv: 'Download CV',
     contacto_titulo: 'Contact',
     contacto_whatsapp: '(+52) 461-335-3002',
