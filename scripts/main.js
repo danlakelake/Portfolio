@@ -60,8 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } else {
         // Se remueven clases en todos los tamaños
-        nav.classList.remove('fixed', 'top-5', 'left-0', 'w-full', 'z-1', 'bg-white');
-        langMenuDiv.classList.remove('fixed', 'top-5', 'right-[14vw]', 'bg-white', 'py-3');
+        nav.classList.remove(
+          'fixed',
+          'top-5',
+          'left-0',
+          'w-full',
+          'z-1',
+          'bg-white',
+        );
+        langMenuDiv.classList.remove(
+          'fixed',
+          'top-5',
+          'right-[14vw]',
+          'bg-white',
+          'py-3',
+        );
       }
     });
   }

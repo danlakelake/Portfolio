@@ -21,7 +21,7 @@ const translations = {
     label_tecnologias: 'Tecnologías:',
     ver_mas: 'Ver más',
     ver_menos: 'Ver menos',
-    exp1_fecha: '| Nov 2025 - Presente',
+    exp1_fecha: '| Nov 2025 - Ago 2026 10 meses',
     exp1_empresa:
       'Arca Media Digital (Part-Time) - WordPress Developer | Web Hosting & Domains Administrator',
     exp1_desc:
@@ -52,7 +52,7 @@ const translations = {
     contacto_linkedin: 'LinkedIn',
     telefono: '(+52) 461-335-3002',
     linkedin: 'LinkedIn',
-    footer_copyright: '©2025 Danlakelake. Todos los derechos reservados.',
+    footer_copyright: `©${currentYear} Danlakelake. Todos los derechos reservados.`,
     // Traducciones Podcast
     desc_podcast:
       '  Un proyecto alterno en el que llevo trabajando aproximadamente <b>5 meses</b> . En él tratamos temas sin guion, como noticias y conversaciones sin filtros, compartiendo reflexiones y experiencias que buscan <b>inspirar</b>, <b>informar</b> y <b>entretener</b>, siempre con buen humor y un estilo cercano y auténtico.',
@@ -77,7 +77,7 @@ const translations = {
     label_tecnologias: 'Technologies:',
     ver_mas: 'View more',
     ver_menos: 'View less',
-    exp1_fecha: '| Nov 2025 - Present',
+    exp1_fecha: '| Nov 2025 - Aug 2026 10 months',
     exp1_empresa:
       'Arca Media Digital (Part-Time) - WordPress Developer | Web Hosting & Domains Administrator',
     exp1_desc:
@@ -108,7 +108,7 @@ const translations = {
     contacto_linkedin: 'LinkedIn',
     telefono: '(+52) 461-335-3002',
     linkedin: 'LinkedIn',
-    footer_copyright: '©2025 Danlakelake. All rights reserved.',
+    footer_copyright: `©${currentYear} Danlakelake. All rights reserved.`,
     // Traducciones Podcast
     desc_podcast:
       'An alternate project I have been working on for about <b>5 months</b>. In it, we cover unscripted topics, such as news and unfiltered conversations, sharing reflections and experiences that aim to <strong>inspire</strong>, <strong>inform</strong>, and <strong>entertain</strong>, always with good humor and a close, authentic style',

@@ -1,8 +1,12 @@
 /* Globals */
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--color-stone-100);
   color: var(--color-gray-700);
 }
+
 /* Projects */
 .swiper-wrapper .swiper-slide:nth-child(odd) {
   transform: rotate(-2deg);
