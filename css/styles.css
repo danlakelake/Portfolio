@@ -1,7 +1,8 @@
 /* Globals */
-html{
+html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--color-stone-100);
   color: var(--color-gray-700);
@@ -11,6 +12,20 @@ body {
 .swiper-wrapper .swiper-slide:nth-child(odd) {
   transform: rotate(-2deg);
 }
+
 .swiper-wrapper .swiper-slide:nth-child(even) {
   transform: rotate(2deg);
+}
+
+.project-image {
+  width: 17.25rem; /* w-69 */
+  height: 18.5rem; /* h-74 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  object-fit: cover;
+  border-radius: 0.75rem; /* rounded-xl */
+  transition: transform 200ms ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
 }
